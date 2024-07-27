@@ -28,7 +28,14 @@ h2 {
 .container {
   display: flex;
   width: max-content;
-  gap: 1rem;
+}
+
+.item {
+  width: 180px;
+  aspect-ratio: 11/16;
+  position: relative;
+  overflow: hidden;
+  clip-path: polygon(1rem 0, 100% 0, calc(100% - 1rem) 100%, 0 100%);
 }
 
 .horizontal-scroll {
@@ -40,13 +47,6 @@ h2 {
 
 .horizontal-scroll::-webkit-scrollbar {
   display: none;
-}
-
-.item {
-  width: 180px;
-  aspect-ratio: 11/16;
-  position: relative;
-  overflow: hidden;
 }
 
 .item figcaption {
