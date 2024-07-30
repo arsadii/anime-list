@@ -27,6 +27,7 @@ h2 {
 
 .container {
   display: flex;
+  gap: 1rem;
   width: max-content;
 }
 
@@ -36,7 +37,6 @@ h2 {
   aspect-ratio: 11/16;
   position: relative;
   overflow: hidden;
-  clip-path: polygon(1rem 0, 100% 0, calc(100% - 1rem) 100%, 0 100%);
 }
 
 .item img {
